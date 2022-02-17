@@ -56,11 +56,11 @@ document.getElementById('save').addEventListener('click', function(){
     const saveBalance = income * saveParsent;
     const remainingBalance = balanceNumber - saveBalance;
      //input not number error
-     if (isNaN(balanceNumber)){
+     if (isNaN(saveValue)){
         alert("It is Not a number; Please give me a Number");
     }
     // nagative value error
-    if (saveValue < 0){
+    else if (saveValue < 0){
         alert("It is Negative number; Please give me a Positive number");
     }
     //big save balance with out balance error
